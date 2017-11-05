@@ -12,21 +12,19 @@
 
 ![EFB](https://images.1a23.com/upload/images/SPET.png)
 
+> Note: This is my modify version.
+
 _Codename_ **EH Forwarder Bot** (EFB) is an extensible chat tunnel framework which allows users to contact people from other chat platforms, and ultimately remotely control their accounts in other platforms.
 
 [Documentation](https://ehforwarderbot.readthedocs.io/en/latest/).
 
-## Media coverage
-* [Appinn: Send and Receive messages from WeChat on Telegram](http://www.appinn.com/eh-forwarder-bot/)  
-  _(EH Forwarder Bot – 在 Telegram 收发「微信」消息)_
-* [Livc: Telegram — the true definition of IM](https://livc.io/177)
-  _(Telegram——真正定义即时通讯)_
+## Related articles
+* [Idea: Group Chat Tunneling (Sync) with EH Forwarder Bot](https://blog.1a23.com/2017/01/28/Idea-Group-Chat-Tunneling-Sync-with-EH-Forwarder-Bot/)
+
+* [EFB:Receive Wechat messages on Telegram](http://leezoom.xyz/2017/10/08/Wechat-to--Telegram/)
 
 ## Feel like contributing?
 Anyone is welcomed to raise an issue or submit a pull request, just remember to read through and understand the [contribution guideline](CONTRIBUTING.md) before you do so.
-
-## Related articles
-* [Idea: Group Chat Tunneling (Sync) with EH Forwarder Bot](https://blog.1a23.com/2017/01/28/Idea-Group-Chat-Tunneling-Sync-with-EH-Forwarder-Bot/)
 
 ## License
 EFB framework is licensed under [GNU General Public License 3.0](https://www.gnu.org/licenses/gpl-3.0.txt).
@@ -48,8 +46,3 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
 ```
-
-### Advertisement
-<a target='_blank' rel='nofollow' href='https://app.codesponsor.io/link/CVTwn6GTn9CjVMHw2HosC9gi/blueset/ehForwarderBot'>
-  <img alt='Sponsor' width='888' height='68' src='https://app.codesponsor.io/embed/CVTwn6GTn9CjVMHw2HosC9gi/blueset/ehForwarderBot.svg' />
-</a>
