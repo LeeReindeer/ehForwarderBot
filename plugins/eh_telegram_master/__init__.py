@@ -1598,21 +1598,6 @@ class TelegramChannel(EFBChannel):
             bot.send_message(getattr(config, self.channel_id)['admins'][0],
                              "Message request is invalid.\n%s\n<code>%s</code>)" %
                              (html.escape(str(error)), html.escape(str(update))), parse_mode="HTML")
-        except (telegram.error.TimedOut, telegram.error.NetworkError):
-            self.timeout_count += 1
-            self.logger.error("Poor internet connection detected.\nError count: %s\n\%s\nUpdate: %s",
-                              self.timeout_count, str(error), str(update))
-            if update is not None and isinstance(getattr(update, "message", None), telegram.Message):
-                update.message.reply_text("This message is not processed due to poor internet environment "
-                                          "of the server.\n"
-                                          "<code>%s</code>" % html.escape(str(error)), quote=True, parse_mode="HTML")
-            if self.timeout_count % 10 == 0:
-                bot.send_message(getattr(config, self.channel_id)['admins'][0],
-                                 "<b>EFB Telegram Master channel</b>\n"
-                                 "You may have a poor internet connection on your server. "
-                                 "Currently %s time-out/network errors are detected.\n"
-                                 "For more details, please refer to the log." % (self.timeout_count),
-                                 parse_mode="HTML")
         except telegram.error.ChatMigrated as e:
             new_id = e.new_chat_id
             old_id = update.message.chat_id
