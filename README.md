@@ -10,9 +10,9 @@
 [![Percentage of issues still open](http://isitmaintained.com/badge/open/blueset/ehforwarderbot.svg)](http://isitmaintained.com/project/blueset/ehforwarderbot "Percentage of issues still open")
 [![Codacy grade](https://img.shields.io/codacy/grade/3b2555f9134844e3b01b00700bc43eeb.svg)](https://www.codacy.com/app/blueset/ehForwarderBot)
 
-![EFB](https://images.1a23.com/upload/images/SPET.png)
+> Note: This is my modified version.
 
-> Note: This is my modify version.
+![EFB](https://images.1a23.com/upload/images/SPET.png)
 
 _Codename_ **EH Forwarder Bot** (EFB) is an extensible chat tunnel framework which allows users to contact people from other chat platforms, and ultimately remotely control their accounts in other platforms.
 
