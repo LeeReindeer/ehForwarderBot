@@ -1608,7 +1608,7 @@ class TelegramChannel(EFBChannel):
                 count += 1
             bot.send_message(new_id, "Chat migration detected."
                                      "All remote chats (%s) are now linked to this new group." % count)
-        except 
+        except:
             self.logger.error("Failed to send error message.")
             self.logger.error('Unhandled telegram bot error!\n'
                               'Update %s caused error %s' % (update, error))
