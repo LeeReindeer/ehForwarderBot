@@ -1608,22 +1608,8 @@ class TelegramChannel(EFBChannel):
                 count += 1
             bot.send_message(new_id, "Chat migration detected."
                                      "All remote chats (%s) are now linked to this new group." % count)
-        except:
-            try:
-                bot.send_message(getattr(config, self.channel_id)['admins'][0],
-                                 "EFB Telegram Master channel encountered error <code>%s</code> "
-                                 "caused by update <code>%s</code>.\n\n"
-                                 "Report issue: <a href=\"https://github.com/blueset/ehForwarderBot/issues/new\">GitHub Issue Page</a>" %
-                                 (html.escape(str(error)), html.escape(str(update))), parse_mode="HTML")
-            except:
-                try:
-                    bot.send_message(getattr(config, self.channel_id)['admins'][0],
-                                     "EFB Telegram Master channel encountered error\n%s\n"
-                                     "caused by update\n%s\n\n"
-                                     "Report issue: https://github.com/blueset/ehForwarderBot/issues/new" %
-                                     (html.escape(str(error)), html.escape(str(update))))
-                except:
-                    self.logger.error("Failed to send error message.")
+        except 
+            self.logger.error("Failed to send error message.")
             self.logger.error('Unhandled telegram bot error!\n'
                               'Update %s caused error %s' % (update, error))
 
